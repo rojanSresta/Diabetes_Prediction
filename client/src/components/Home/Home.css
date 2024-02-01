@@ -1,0 +1,56 @@
+.row {
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box {
+    margin-top: 25%;
+}
+
+#col1 {
+    background-color: #ab182b;
+    color: #F1F5D8;
+}
+
+#infoHead {
+    letter-spacing: 3px;
+}
+
+#col2 {
+    background-color: #ab182b;
+}
+
+.box h5 {
+    letter-spacing: 2px;
+}
+
+#btn {
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #E05015;
+    width: 10em;
+    font-weight: bold;
+}
+
+#btn:hover {
+    background-color: #e6b09a;
+    color: #E05015;
+    font-weight: bold;
+}
+
+#guessImage {
+    width: 40%;
+    height: 55%;
+}
+
+#question {
+    background-color: #E05015;
+    border-radius: 15px;
+}
+
+#polygon {
+    position: relative;
+    top: -10px;
+    left: -3em;
+}

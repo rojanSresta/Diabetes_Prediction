@@ -1,0 +1,24 @@
+body {
+    background-color: #ab182b;
+    color: #F1F5D8;
+}
+
+.button {
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #E05015;
+    width: 10em;
+    font-weight: bold;
+    height: 3rem;
+}
+
+.button:hover {
+    background-color: #e6b09a;
+    color: #E05015;
+    font-weight: bold;
+}
+
+#head {
+    font-size: 3rem;
+}
