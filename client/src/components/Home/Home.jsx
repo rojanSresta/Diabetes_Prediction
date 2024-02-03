@@ -4,7 +4,7 @@ import Form from "../Form/Form";
 import { useState } from "react";
 
 function Home() {
-  const [showForm, setShowForm] = useState(true);
+  const [showForm, setShowForm] = useState(false);
   const handleButtonClick = () => {
     setShowForm(!showForm);
   };

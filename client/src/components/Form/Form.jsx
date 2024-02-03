@@ -1,6 +1,7 @@
 import React from "react";
 import "./Form.css";
 import { useState, useEffect } from "react";
+import Result from "../Result/Result";
 
 function Form() {
   const [submit, setSubmit] = useState(false);
@@ -48,8 +49,9 @@ function Form() {
 
   return (
     <>
+      {submit ?  <Result/>: (
       <div className="form mx-5 mt-3">
-        <form action="" method="get" onSubmit={handleSubmit}>
+        <form action="{{ url_for('predict') }}" method="post" onSubmit={handleSubmit}>
           <fieldset>
             <legend className="text-center" id="head">
               Diabetes Prediction
@@ -66,6 +68,7 @@ function Form() {
                     name={column}
                     className="form-control bg-light text-dark"
                     placeholder=""
+                    step="any"
                     onChange={(e)=>handleChange(e, column)}
                     required
                   />
@@ -84,6 +87,7 @@ function Form() {
           </fieldset>
         </form>
       </div>
+      )}
     </>
   );
 }
